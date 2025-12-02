@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #e0e0e0;
+    color: black;
+}
+/* Video */
+#video-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* Scroll progress */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background-color: #4caf50;
+    z-index: 2000;
+    transition: width 0.1s ease-out;
+}
+/* Navbar */
+.navbar {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 20px;
+    position: relative;
+    flex-wrap: wrap;
+    opacity: 0.5;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 100px;
+    max-width: 1200px;
+}
+
+/* Branding */
+.hero-content h2{
+    font-size: 40px;
+}
+.hero-content p{
+    font-size: 16px;
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.nav-links a:hover{
+    color: gray;
+}
+.nav-links.open{
+    display: flex;
+}
+
+/* Hamburger */
+.menu-toggle{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+/* Sections */
+section{
+    margin-top: 100px;
+    padding-top: 150px;
+}
+#About {
+    background-color: white;
+    margin-top: 175px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.about-container {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.about-container img{
+    width: 250px;
+    border-radius: 10px;
+}
+.about-container p{
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+#Projects {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.Project {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 5px;
+    width: 48%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.Project img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#Skills{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+#skills-container{
+    background-color: #e0e0e0; 
+    padding: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Skill{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+#Contact{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1)
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 40px auto;
+    max-width: 450px;
+    width: 48%;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+input, textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button{
+    background: #222;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: #444;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: flex; /* Always show links */
+        flex-direction: row;
+        width: auto;
+    }
+    .menu-toggle {
+        display: none; /* Hide hamburger */
+    }
+    section {
+        padding: 4rem 8%;
+}
+

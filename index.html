@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swikriti Shrestha</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <header id="hero">
+        <video autoplay loop muted id="video-background">
+            <source src="videos/WhatsApp Video 2025-12-02 at 09.19.08_4ad332da.mp4" type="video/mp4">
+            YOUR BROWSER DOES NOT SUPPORT THE VIDEO TAG.
+        </video>
+
+        <nav class="navbar">
+            <div class="hero-content">
+                <h2>Ishan Tripathi</h2>
+                <p>Frontend Developer & UI/UX Enthusiast</p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-toggle" aria-expanded="false" id="menu-button">☰</button>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="About">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <img src="images/Picture3.jpg" alt="Profile Picture">
+            <p>My name is Ishan Tripathi, and I am 20 years old. I am currently studying at Herald College, Kathmandu, Naxal, where I am focused on gaining knowledge and developing my skills. I am passionate about learning new things and exploring different areas that interest me. I enjoy engaging in activities that help me grow both personally and professionally, and I value honesty, hard work, and dedication in everything I do. In my free time, I like to read, listen to music, and spend time with friends.</p>
+        </div>
+    </section>
+
+    <section id="Projects">
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="Project">
+                <img src="images/Picture1.jpg" alt="3D Gokhuldham Society">
+                <h3>3D Gokhuldham Society</h3>
+                <p>Created the 3D version of Gokhuldham Society using Unity. Users can explore the building, road, and garden areas for entertainment.</p>
+            </div>
+
+            <div class="Project">
+                <img src="images/Picture2.jpg" alt="Banking System">
+                <h3>Banking System</h3>
+                <p>Created a banking system using Java with classes, objects, and other OOP concepts. Includes deposit and withdrawal methods.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills">
+        <h1>Skills</h1>
+        <div id="skills-container">
+            <div class="Skill">HTML</div>
+            <div class="Skill">CSS</div>
+            <div class="Skill">JavaScript</div>
+            <div class="Skill">Python</div>
+            <div class="Skill">Java</div>
+            <div class="Skill">C</div>
+            <div class="Skill">C++</div>
+        </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="Contact">
+        <div class="form-container">
+            <h1>Contact Me</h1>
+            <form id="Contact-form">
+                <label for="name">Name:</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Submit</button>
+                <div id="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Ishan Tripathi • All Rights Reserved</p>
+        <p>Designed & Developed by Ishan Tripathi</p>
+    </footer>
+   <script src="JS/script.js"></script>
+</body>
+</html>
